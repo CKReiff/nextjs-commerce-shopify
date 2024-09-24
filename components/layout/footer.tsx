@@ -5,7 +5,7 @@ import { Suspense } from 'react';
 
 export default async function Footer() {
   const skeleton = 'w-full h-6 animate-pulse rounded bg-neutral-200 dark:bg-neutral-700';
-  const menu = await getMenu('next-js-frontend-header-menu');
+  const menu = await getMenu('footer');
 
   return (
     <footer className="text-sm text-neutral-500 dark:text-neutral-400">
