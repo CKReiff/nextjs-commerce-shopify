@@ -1,7 +1,7 @@
+import CartModal from 'components/cart/modal';
 import LogoIcon from 'components/icons/logo';
 import { getMenu } from 'lib/shopify';
 import Link from 'next/link';
-import { Suspense } from 'react';
 import MobileMenu from './mobile-menu';
 
 
@@ -21,9 +21,7 @@ export async function Navbar() {
         </Link>
       </div>
       <div className="flex justify-end">
-        <Suspense fallback={<OpenCart />}>
-          <Cart />
-        </Suspense>
+        <CartModal />
       </div>
     </nav>
   );

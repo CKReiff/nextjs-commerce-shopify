@@ -3,6 +3,7 @@ import Footer from 'components/layout/footer';
 import Prose from 'components/prose';
 import { getPage } from 'lib/shopify';
 import { notFound } from 'next/navigation';
+import { Suspense } from 'react';
 
 export const metadata = {
   description: 'High-performance ecommerce store built with Next.js, Vercel, and Shopify.',
